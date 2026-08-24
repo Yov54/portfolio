@@ -1,0 +1,498 @@
+[
+  {
+    "title": "Herbitional App",
+    "category": "ML",
+    "description": "An AI-powered medicinal plant recommendation app built as part of a Bangkit capstone project, combining machine learning with a healthcare-focused user experience.",
+    "tech": ["Python", "TensorFlow", "NLP", "Flask", "NumPy"],
+    "solidColor": "--color-accent",
+    "github": "#",
+    "demo": "#",
+    "icon": "bx bx-capsule",
+    "status": "Bangkit Project",
+    "details": {
+      "heroTitle": "Herbitional App",
+      "heroTagline": "Machine Learning • Healthcare • Recommendation",
+      "overview": "Herbitional App helps users discover medicinal plants and herbal remedies by analyzing symptoms and plant properties with a custom NLP recommendation model.",
+      "myRole": {
+        "modelDevelopment": [
+          "Built and trained an NLP-based recommendation model using TensorFlow",
+          "Preprocessed plant and symptom data to improve matching accuracy",
+          "Validated recommendations with sample herbal use cases"
+        ],
+        "backendDevelopment": [
+          "Implemented Flask API endpoints for symptom submission and recommendations",
+          "Designed data schema and integrated inference logic into the backend",
+          "Managed model prediction flow and API response formatting"
+        ],
+        "uiUxDesign": [
+          "Designed a user-friendly symptom entry flow with clear health guidance",
+          "Created responsive plant result cards and detail views",
+          "Improved usability through concise recommendation explanations"
+        ]
+      },
+      "architecture": "User Input → Flask API → TensorFlow Model → Recommendation Engine → Result Display",
+      "architectureDescription": "The frontend sends user symptoms to the Flask backend, where the model evaluates plant matches and returns ranked herbal suggestions to the UI.",
+      "features": [
+        "Symptom-based medicinal plant recommendation using NLP",
+        "Medicinal plant detail pages with benefits and usage notes",
+        "Interactive search and filter for plant categories",
+        "Responsive healthcare-focused interface for mobile and desktop"
+      ],
+      "technologies": ["Python", "TensorFlow", "NLP", "Flask", "NumPy", "HTML", "CSS", "JavaScript"],
+      "challenges": [
+        {
+          "title": "Data Quality",
+          "description": "Cleaning and normalizing plant and symptom data was essential to produce accurate recommendations, so I developed preprocessing steps to standardize input terms."
+        },
+        {
+          "title": "Model Interpretability",
+          "description": "Balancing recommendation accuracy with understandable output required tuning the model and adding clear explanation text in the UI."
+        },
+        {
+          "title": "User Experience",
+          "description": "Designing a simple symptom workflow for non-technical users meant focusing on clear labels, intuitive inputs, and easy-to-read results."
+        }
+      ],
+      "results": [
+        "Delivered an AI-driven recommendation app that connects user symptoms with herbal remedies",
+        "Built a functional Flask backend to support model inference and API responses",
+        "Created a polished UI for symptom entry and treatment suggestion browsing"
+      ]
+    }
+  },
+  {
+    "title": "IoT-Based Electric Scooter Monitoring System",
+    "category": "Robotics",
+    "description": "An IoT-based monitoring system for rental electric scooters that combines embedded hardware, wireless communication, and a web dashboard for real-time tracking and safety monitoring.",
+    "tags": ["Embedded Systems", "IoT", "Remote Monitoring"],
+    "tech": ["ESP32", "LoRa SX1278", "GPS NEO-6M", "Arduino IDE", "MQTT", "PHP", "JavaScript", "Bootstrap", "MySQL"],
+    "solidColor": "--color-accent-light",
+    "github": "#",
+    "demo": "#",
+    "icon": "bx bx-broadcast",
+    "status": "Thesis Project",
+    "details": {
+      "heroTitle": "IoT-Based Electric Scooter Monitoring System",
+      "heroTagline": "An IoT-based monitoring system that enhances rental electric scooter safety through real-time tracking, emergency alerts, and long-range wireless communication.",
+      "overview": "This project was developed as my undergraduate thesis to improve the safety of rental electric scooter users. The system combines custom embedded hardware, LoRa communication, GPS tracking, and a web-based monitoring dashboard to provide real-time location monitoring and emergency notifications over long distances.",
+      "myRole": {
+        "embeddedSystemDevelopment": [
+          "Designed and developed both transmitter and receiver devices.",
+          "Programmed microcontrollers for GPS tracking, sensor communication, and LoRa data transmission.",
+          "Integrated multiple hardware components into a complete monitoring system."
+        ],
+        "pcbDesignHardwareIntegration": [
+          "Designed custom PCBs for both transmitter and receiver modules.",
+          "Assembled and tested electronic components into functional prototypes.",
+          "Performed hardware debugging and integration testing."
+        ],
+        "webDashboardDevelopment": [
+          "Developed a web dashboard for real-time location monitoring.",
+          "Displayed GPS locations and device status through an intuitive interface.",
+          "Connected incoming IoT data to the monitoring dashboard."
+        ]
+      },
+      "architecture": "GPS Module\n      │\n      ▼\nESP32 Transmitter\n      │\n      ▼\nLoRa Communication\n      │\n      ▼\nESP32 Receiver\n      │\n      ▼\nMQTT Broker\n      │\n      ▼\nDatabase\n      │\n      ▼\nWeb Monitoring Dashboard",
+      "architectureDescription": "The transmitter collects GPS and safety information from the scooter and sends it to the receiver through LoRa. The receiver forwards the data via MQTT, allowing operators to monitor scooters through a web dashboard in near real time.",
+      "features": [
+        "Real-Time GPS Tracking: Monitor scooter locations in real time through a web dashboard.",
+        "Long-Range LoRa Communication: Transmit monitoring data over long distances using LoRa technology.",
+        "Emergency Alert System: Send emergency notifications when the rider activates the emergency button.",
+        "Custom Embedded Hardware: Built using custom-designed transmitter and receiver PCBs.",
+        "Monitoring Dashboard: Visualize location data and device status through a web interface."
+      ],
+      "hardwareDesign": {
+        "transmitter": [
+          "Installed on the scooter and responsible for reading GPS coordinates",
+          "Calculates speed using GPS data",
+          "Detects emergency button presses",
+          "Sends data via LoRa",
+          "Displays information on OLED"
+        ],
+        "receiver": [
+          "Receives LoRa packets",
+          "Forwards data through MQTT",
+          "Connects the embedded system with the web dashboard"
+        ]
+      },
+      "webDashboard": "The dashboard provides operators with a centralized monitoring interface that includes live scooter locations, rider status, emergency alerts, device connection status, and scooter information.",
+      "technologies": ["ESP32", "LoRa SX1278", "GPS NEO-6M", "Arduino IDE", "MQTT", "PHP", "JavaScript", "Bootstrap", "MySQL", "HTML", "CSS", "Leaflet.js", "XAMPP"],
+      "challenges": [
+        {
+          "title": "Hardware Integration",
+          "description": "Integrated multiple electronic components including GPS, LoRa modules, and microcontrollers into a reliable embedded system."
+        },
+        {
+          "title": "Long-Range Communication",
+          "description": "Optimized LoRa communication to provide stable data transmission over extended distances."
+        },
+        {
+          "title": "System Integration",
+          "description": "Connected embedded devices with the web monitoring dashboard to provide real-time data visualization."
+        }
+      ],
+      "results": [
+        "Built an end-to-end IoT monitoring system combining embedded hardware, wireless communication, and a web dashboard.",
+        "Developed working transmitter and receiver prototypes for real-world testing.",
+        "Established reliable LoRa-based communication between devices.",
+        "Implemented GPS-based location tracking and emergency alert flow.",
+        "Connected the embedded system to a live monitoring interface for operators."
+      ],
+      "gallery": [
+        { "title": "Prototype Transmitter", "image": "images/projects/scooter/prototype_transmitter.jpg" },
+        { "title": "Prototype Receiver", "image": "images/projects/scooter/prototype_receiver.jpg" },
+        { "title": "PCB Transmitter", "image": "images/projects/scooter/pcb_transmitter.jpg" },
+        { "title": "PCB Receiver", "image": "images/projects/scooter/pcb_receiver.jpg" },
+        { "title": "Dashboard Screenshot", "image": "images/projects/scooter/dashboard.jpg" },
+        { "title": "Hardware Assembly", "image": "images/projects/scooter/hardware_assembly.jpg" },
+        { "title": "Field Testing", "image": "images/projects/scooter/field_testing.jpg" }
+      ],
+      "codeSnippets": {
+        "transmitter": {
+          "title": "ESP32 Transmitter (C++)",
+          "language": "cpp",
+          "description": "Firmware untuk ESP32 Transmitter pada skuter yang membaca data GPS, memonitor tombol SOS, dan mengirim paket telemetri ke LoRa SX1278.",
+          "code": "#include <SPI.h>\n#include <LoRa.h>\n#include <TinyGPS++.h>\n#include <HardwareSerial.h>\n\n// Pinout konfigurasi LoRa SX1278\n#define SS      18\n#define RST     14\n#define DIO0    26\n#define BAND    915E6 // Frekuensi LoRa (disesuaikan dengan wilayah)\n\nTinyGPSPlus gps;\nHardwareSerial gpsSerial(2); // GPS terhubung pada UART2\n\nconst float SPEED_LIMIT = 25.0; // Limit kecepatan dalam km/jam\nconst int SOS_BUTTON_PIN = 4;\nvolatile bool sosPressed = false;\n\n// Hardware ISR (Interrupt Service Routine) untuk tombol darurat SOS\nvoid IRAM_ATTR handleSOS() {\n  sosPressed = true;\n}\n\nvoid setup() {\n  Serial.begin(115200);\n  gpsSerial.begin(9600, SERIAL_8N1, 16, 17); // Rx=PIN 16, Tx=PIN 17\n  \n  pinMode(SOS_BUTTON_PIN, INPUT_PULLUP);\n  attachInterrupt(digitalPinToInterrupt(SOS_BUTTON_PIN), handleSOS, FALLING);\n  \n  LoRa.setPins(SS, RST, DIO0);\n  if (!LoRa.begin(BAND)) {\n    Serial.println(\"Memulai LoRa gagal!\");\n    while (1);\n  }\n  Serial.println(\"ESP32 LoRa Transmitter berhasil diinisialisasi.\");\n}\n\nvoid loop() {\n  // Membaca stream data NMEA dari modul GPS\n  while (gpsSerial.available() > 0) {\n    gps.encode(gpsSerial.read());\n  }\n\n  // Kirim data jika modul GPS memperbarui lokasi\n  if (gps.location.isUpdated()) {\n    float latitude = gps.location.lat();\n    float longitude = gps.location.lng();\n    float speed = gps.speed.kmh();\n    \n    // Validasi batas kecepatan\n    bool overspeed = (speed > SPEED_LIMIT);\n    \n    // Enkapsulasi data menjadi format paket CSV: \"LAT,LNG,SPEED,OVERSPEED,SOS\"\n    String packet = String(latitude, 6) + \",\" +\n                   String(longitude, 6) + \",\" +\n                   String(speed, 2) + \",\" +\n                   (overspeed ? \"1\" : \"0\") + \",\" +\n                   (sosPressed ? \"1\" : \"0\");\n                   \n    // Mengirimkan paket melalui sinyal RF LoRa\n    LoRa.beginPacket();\n    LoRa.print(packet);\n    LoRa.endPacket();\n    \n    Serial.println(\"Paket Terkirim: \" + packet);\n    \n    // Reset status interupsi SOS setelah berhasil terkirim\n    if (sosPressed) {\n      sosPressed = false;\n    }\n  }\n  delay(1000); // Sampling data berkala setiap 1 detik\n"
+        },
+        "receiver": {
+          "title": "ESP32 Receiver (C++)",
+          "language": "cpp",
+          "description": "Firmware ESP32 Receiver sebagai gateway yang menerima paket LoRa dan meneruskannya ke MQTT Broker melalui jaringan Wi-Fi.",
+          "code": "#include <SPI.h>\n#include <LoRa.h>\n#include <WiFi.h>\n#include <PubSubClient.h>\n\n// Pinout konfigurasi LoRa SX1278\n#define SS      18\n#define RST     14\n#define DIO0    26\n#define BAND    915E6\n\nconst char* ssid = \"WIFI_AP_SSID\";\nconst char* password = \"WIFI_PASSWORD\";\nconst char* mqtt_server = \"broker.hivemq.com\";\nconst char* mqtt_topic = \"scooter/monitoring/data\";\n\nWiFiClient espClient;\nPubSubClient client(espClient);\n\nvoid setup() {\n  Serial.begin(115200);\n  setup_wifi();\n  \n  client.setServer(mqtt_server, 1883);\n  \n  LoRa.setPins(SS, RST, DIO0);\n  if (!LoRa.begin(BAND)) {\n    Serial.println(\"Memulai LoRa gagal!\");\n    while (1);\n  }\n  Serial.println(\"ESP32 LoRa Receiver (Gateway) Terinisialisasi.\");\n}\n\nvoid setup_wifi() {\n  delay(10);\n  Serial.print(\"Menghubungkan ke \" );\n  Serial.println(ssid);\n  WiFi.begin(ssid, password);\n  while (WiFi.status() != WL_CONNECTED) {\n    delay(500);\n    Serial.print(\".\");\n  }\n  Serial.println(\"\nWi-Fi terhubung.\");\n}\n\nvoid reconnect() {\n  while (!client.connected()) {\n    Serial.print(\"Mencoba koneksi MQTT...\");\n    if (client.connect(\"ESP32_Scooter_Receiver_Gateway\")) {\n      Serial.println(\"terhubung ke broker MQTT\");\n    } else {\n      Serial.print(\"gagal, status=\");\n      Serial.print(client.state());\n      Serial.println(\" mencoba kembali dalam 5 detik...\");\n      delay(5000);\n    }\n  }\n}\n\nvoid loop() {\n  if (!client.connected()) {\n    reconnect();\n  }\n  client.loop();\n\n  // Parsing jika ada paket LoRa RF yang masuk\n  int packetSize = LoRa.parsePacket();\n  if (packetSize) {\n    String payload = \"\";\n    while (LoRa.available()) {\n      payload += (char)LoRa.read();\n    }\n    Serial.println(\"Menerima paket LoRa: \" + payload);\n    \n    // Publikasikan payload ke MQTT Broker secara langsung\n    if (client.publish(mqtt_topic, payload.c_str())) {\n      Serial.println(\"Data berhasil diteruskan ke MQTT topic\");\n    } else {\n      Serial.println(\"Gagal mempublikasikan data ke MQTT\");\n    }\n  }\n}"
+        },
+        "dashboard": {
+          "title": "Web Dashboard (JS - MQTT)",
+          "language": "javascript",
+          "description": "Kode klien dashboard web yang menghubungkan ke MQTT broker melalui WebSocket, menerima update lokasi real-time, dan memindahkan marker Leaflet.js.",
+          "code": "import mqtt from 'mqtt';\nimport L from 'leaflet';\n\n// Inisialisasi peta Leaflet berpusat di Universitas Udayana, Bali\nconst map = L.map('map-container').setView([-8.673, 115.216], 15);\nL.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {\n  attribution: '© OpenStreetMap contributors'\n}).addTo(map);\n\n// Kustomisasi marker skuter listrik\nconst scooterIcon = L.icon({\n  iconUrl: '/images/scooter-icon.png',\n  iconSize: [40, 40],\n  iconAnchor: [20, 40]\n});\n\nlet scooterMarker = L.marker([-8.673, 115.216], { icon: scooterIcon }).addTo(map);\nscooterMarker.bindPopup('<b>Skuter #01</b><br>Menghubungkan ke GPS...').openPopup();\n\n// Menghubungkan ke HiveMQ MQTT Broker via WebSockets port 8000\nconst client = mqtt.connect('ws://broker.hivemq.com:8000/mqtt');\n\nclient.on('connect', () => {\n  console.log('Koneksi broker MQTT via WebSocket berhasil!');\n  client.subscribe('scooter/monitoring/data');\n});\n\nclient.on('message', (topic, message) => {\n  const payload = message.toString(); // Format string payload: \"lat,lng,speed,overspeed,sos\"\n  const [latStr, lngStr, speedStr, overspeedStr, sosStr] = payload.split(',');\n  \n  const lat = parseFloat(latStr);\n  const lng = parseFloat(lngStr);\n  const speed = parseFloat(speedStr);\n  const isOverspeed = overspeedStr === '1';\n  const isSos = sosStr === '1';\n\n  // Memindahkan penanda skuter ke koordinat baru secara dinamis\n  const newLatLng = new L.LatLng(lat, lng);\n  scooterMarker.setLatLng(newLatLng);\n  map.panTo(newLatLng);\n\n  // Kustomisasi teks popup sesuai status telemetri terkini\n  let popupContent = `\n    <div class='scooter-popup text-slate-800'>\n      <h4 class='font-bold text-sm'>Skuter Rental #01</h4>\n      <p class='text-xs mt-1'>Kecepatan: \n        <span class='font-semibold ${isOverspeed ? 'text-red-600 font-bold' : 'text-slate-600'}'>\n          ${speed} km/jam\n        </span>\n      </p>\n      <p class='text-xs'>Status: \n        ${isSos ? '<span class='text-red-500 font-bold animate-pulse'>⚠️ SOS AKTIF</span>' : '<span class='text-green-600'>Normal</span>'}\n      </p>\n    </div>\n  `;\n  scooterMarker.getPopup().setContent(popupContent);\n\n  // Memicu notifikasi sistem jika tombol SOS ditekan pengendara\n  if (isSos) {\n    triggerAlertBanner(lat, lng);\n  }\n});\n\nfunction triggerAlertBanner(lat, lng) {\n  const notificationArea = document.getElementById('alert-toast-container');\n  notificationArea.innerHTML = `\n    <div class='bg-red-500/20 border border-red-500 text-red-200 p-4 rounded-xl flex justify-between items-center animate-pulse'>\n      <div class='flex items-center gap-2'>\n        <span class='text-xl'>🚨</span>\n        <div>\n          <h5 class='font-bold text-sm'>ALARM SOS AKTIF!</h5>\n          <p class='text-xs'>Pengendara membutuhkan bantuan di koordinat: ${lat}, ${lng}</p>\n        </div>\n      </div>\n      <button class='bg-red-600 text-white text-xs px-3 py-1 rounded' onclick='this.parentElement.remove()'>Tutup</button>\n    </div>\n  `;\n}"
+        }
+      }
+    }
+  },
+  {
+    "title": "Mini Trading API",
+    "category": "Backend",
+    "description": "RESTful API engine for a simulated trading platform focused on transaction integrity, concurrency handling, and scalable backend architecture.",
+    "tags": ["Backend API", "Trading Simulation", "REST API"],
+    "highlights": [
+      "Service-Repository Pattern to separate business logic and database queries",
+      "Pessimistic Locking to prevent double-spending under concurrent requests",
+      "Redis caching and queue for faster processing and async workflows",
+      "Form request validation and rate limiting guards",
+      "Automated integration testing for core transaction flows"
+    ],
+    "details": {
+      "heroTitle": "Mini Trading API",
+      "heroTagline": "A RESTful backend API that simulates trading transactions with a focus on reliability, data consistency, and secure API design.",
+      "overview": "Mini Trading API is a backend application developed to simulate trading transactions through a RESTful API. The project focuses on building reliable backend services, handling transaction workflows, validating requests, and maintaining data consistency while following clean API design principles.",
+      "myRole": {
+        "backendDevelopment": [
+          "Designed and developed RESTful API endpoints for trading operations.",
+          "Implemented business logic for transaction processing and validation.",
+          "Structured backend modules to improve maintainability."
+        ],
+        "apiArchitecture": [
+          "Designed request and response structures for consistent API communication.",
+          "Implemented authentication and authorization mechanisms where required.",
+          "Applied input validation and error handling across API endpoints."
+        ],
+        "systemReliability": [
+          "Maintained transaction consistency during trading operations.",
+          "Improved backend reliability through proper validation and exception handling.",
+          "Tested API functionality to ensure stable behavior across different scenarios."
+        ]
+      },
+      "architecture": "HTTP Request → Controller Validation → Service Layer → Repository → MySQL + Redis Cache",
+      "architectureImage": "images/mini_trading_architecture.png",
+      "architectureDescription": "Requests are validated at the controller layer before business rules execute in the service layer. Database updates follow structured logic to maintain consistency and reliability across trading operations.",
+      "features": [
+        "RESTful API: Well-structured API endpoints for trading operations.",
+        "Authentication: Secure access to protected API resources.",
+        "Transaction Processing: Handles simulated trading transactions with proper validation.",
+        "Data Validation: Validates requests to maintain data consistency.",
+        "Error Handling: Provides meaningful responses for invalid requests and system errors."
+      ],
+      "technologies": ["PHP", "Laravel 11", "Redis", "Docker", "MySQL"],
+      "challenges": [
+        {
+          "title": "Transaction Consistency",
+          "description": "Designed backend logic to ensure trading operations maintained consistent data throughout each transaction."
+        },
+        {
+          "title": "API Validation",
+          "description": "Implemented request validation and structured error handling to prevent invalid operations."
+        },
+        {
+          "title": "Maintainable Architecture",
+          "description": "Organized backend modules and business logic to simplify future development and maintenance."
+        }
+      ],
+      "results": [
+        "Built a functional trading simulation API with structured backend logic.",
+        "Improved request handling and error responses for better API reliability.",
+        "Delivered a backend solution focused on consistency, maintainability, and clear API design."
+      ]
+    },
+    "icon": "bx bx-server",
+    "status": "Featured",
+    "tech": ["PHP", "Laravel 11", "Redis", "Docker", "MySQL"],
+    "solidColor": "--color-accent-dark",
+    "github": "https://github.com/yov54/mini-trading",
+    "demo": "#"
+  },
+  {
+    "title": "DoResume",
+    "category": "Frontend",
+    "description": "A responsive online resume-building platform with an emphasis on usability, polished UI, and smooth user experience.",
+    "tags": ["Resume Builder", "Productivity", "Frontend Development"],
+    "tech": ["Laravel", "Tailwind CSS", "JavaScript", "MySQL"],
+    "solidColor": "--color-accent-light",
+    "github": "#",
+    "demo": "#",
+    "icon": "bx bx-file",
+    "details": {
+      "heroTitle": "DoResume",
+      "heroTagline": "A web-based resume builder that helps users create professional resumes through a simple, guided editing experience.",
+      "overview": "DoResume is a web-based resume builder designed to simplify the process of creating professional resumes. The application provides an intuitive editing experience with structured forms and organized sections, allowing users to build and update their resumes efficiently.",
+      "myRole": {
+        "frontendDevelopment": [
+          "Developed responsive pages using Laravel and Bootstrap.",
+          "Built reusable UI components for resume editing and preview.",
+          "Implemented interactive form behavior using JavaScript."
+        ],
+        "formContentManagement": [
+          "Designed structured input forms for resume information.",
+          "Organized resume sections into a clear and consistent editing workflow.",
+          "Improved content organization for better readability."
+        ],
+        "userExperience": [
+          "Optimized the editing experience for desktop and mobile devices.",
+          "Designed intuitive navigation between resume sections.",
+          "Focused on creating a simple and distraction-free interface."
+        ]
+      },
+      "architecture": "Form Input → Client Rendering → Resume Preview → Editable Resume Sections",
+      "architectureDescription": "The application renders resume content through structured form inputs and a live preview, making it easier for users to edit information and review changes in a consistent workflow.",
+      "features": [
+        "Resume Editor: Create and update resume information through structured forms.",
+        "Responsive Design: Access and edit resumes across desktop, tablet, and mobile devices.",
+        "Organized Sections: Manage education, experience, skills, and other resume content with a clear structure.",
+        "Simple Navigation: Navigate easily between different resume sections during editing."
+      ],
+      "technologies": ["Laravel", "Bootstrap", "JavaScript", "MySQL", "HTML", "CSS"],
+      "challenges": [
+        {
+          "title": "Form Usability",
+          "description": "Designed forms that remained simple and easy to complete while handling different types of resume information."
+        },
+        {
+          "title": "Responsive Layout",
+          "description": "Ensured the editing interface remained comfortable to use across multiple screen sizes."
+        },
+        {
+          "title": "Content Organization",
+          "description": "Structured resume sections to improve readability and provide a consistent editing experience."
+        }
+      ],
+      "results": [
+        "Built a functional resume builder with a straightforward editing workflow.",
+        "Improved the usability of resume content entry across devices.",
+        "Delivered a frontend experience focused on clarity, structure, and ease of use."
+      ]
+    }
+  },
+  {
+    "title": "D’Best Grass",
+    "category": "Frontend",
+    "description": "A product catalog and content management website built to support business needs with a clean interface and functional content flows.",
+    "tech": ["Laravel", "Bootstrap", "JavaScript", "MySQL"],
+    "solidColor": "--color-accent",
+    "github": "#",
+    "demo": "#",
+    "icon": "bx bx-store",
+    "tags": ["Business Website", "Product Catalog", "Frontend Development"],
+    "details": {
+      "heroTitle": "D’Best Grass",
+      "heroTagline": "A responsive business website that showcases products through a clean and organized catalog experience.",
+      "heroImage": "#",
+      "overview": "D'Best Grass is a responsive business website developed to showcase artificial grass products through a structured product catalog. The website focuses on presenting product information clearly, making it easier for customers to browse products while supporting the company's online presence.",
+      "myRole": {
+        "frontendDevelopment": [
+          "Developed responsive product catalog and product detail pages using Laravel and Bootstrap.",
+          "Built reusable UI components for consistent layouts across the website.",
+          "Implemented interactive elements using JavaScript to improve navigation and usability."
+        ],
+        "productCatalogManagement": [
+          "Structured product information into clear and organized catalog pages.",
+          "Designed intuitive navigation to help users browse products more efficiently.",
+          "Optimized layouts for desktop, tablet, and mobile devices."
+        ],
+        "userExperience": [
+          "Focused on clear visual hierarchy and readable content layouts.",
+          "Improved browsing experience through consistent spacing and navigation.",
+          "Maintained a clean interface aligned with the company's branding."
+        ]
+      },
+      "features": [
+        {
+          "title": "Product Catalog",
+          "description": "Browse products through organized catalog pages.",
+          "icon": "bx bx-store-alt"
+        },
+        {
+          "title": "Responsive Design",
+          "description": "Optimized layouts for desktop, tablet, and mobile devices.",
+          "icon": "bx bx-devices"
+        },
+        {
+          "title": "Simple Navigation",
+          "description": "Clear navigation and product organization for easier browsing.",
+          "icon": "bx bx-navigation"
+        },
+        {
+          "title": "Product Details",
+          "description": "Dedicated product pages with structured product information.",
+          "icon": "bx bx-layer"
+        }
+      ],
+      "technologies": ["Laravel", "Bootstrap", "JavaScript", "MySQL", "HTML", "CSS"],
+      "challenges": [
+        {
+          "title": "Organizing Product Information",
+          "description": "Designed a clear content hierarchy so customers could easily browse and compare products without feeling overwhelmed."
+        },
+        {
+          "title": "Responsive Layout",
+          "description": "Adjusted layouts and spacing to ensure a consistent browsing experience across different screen sizes."
+        },
+        {
+          "title": "Consistent User Interface",
+          "description": "Built reusable interface components to maintain a cohesive design throughout the website."
+        }
+      ]
+    }
+  },
+  {
+    "title": "Portfolio Website",
+    "category": "Frontend",
+    "description": "A modern personal portfolio website showcasing skills, experience, and projects through an interactive and visually polished experience.",
+    "tech": ["React", "Tailwind CSS", "Vite"],
+    "solidColor": "--color-accent-dark",
+    "github": "#",
+    "demo": "#",
+    "icon": "bx bx-code-curly",
+    "details": {
+      "heroTitle": "Portfolio Website",
+      "heroTagline": "React • Tailwind CSS • Responsive Design",
+      "overview": "A personal portfolio website built to showcase projects, skills, and experience with a clean design, smooth interactions, and fast performance.",
+      "myRole": {
+        "frontendDevelopment": [
+          "Built reusable React components for project cards, sections, and modal interactions",
+          "Implemented responsive styling and animations with Tailwind CSS",
+          "Set up Vite for fast development and optimized production builds"
+        ],
+        "design": [
+          "Crafted a modern visual style to highlight work and experience clearly",
+          "Focused on usability, accessibility, and smooth scroll interactions",
+          "Organized content flow for easy discovery of skills and projects"
+        ]
+      },
+      "architecture": "React Components → Data-driven Project Rendering → Modal Details → Responsive Layout",
+      "architectureDescription": "The site renders project data dynamically, uses modal components for detailed views, and adapts layout across device sizes.",
+      "features": [
+        "Interactive project showcase with modal details",
+        "Responsive sections for skills, experience, and contact",
+        "Clean and consistent UI using Tailwind CSS",
+        "Fast load performance with Vite-powered build"
+      ],
+      "technologies": ["React", "Tailwind CSS", "Vite", "JavaScript", "HTML", "CSS"],
+      "challenges": [
+        {
+          "title": "Component Reuse",
+          "description": "Creating reusable layout and modal components helped maintain consistency across the portfolio and simplified future updates."
+        },
+        {
+          "title": "Responsive Experience",
+          "description": "Ensuring the portfolio looked polished on mobile, tablet, and desktop required careful layout and spacing decisions."
+        }
+      ],
+      "results": [
+        "Delivered a polished portfolio website with clear project storytelling",
+        "Built a responsive React-based frontend with smooth interactions",
+        "Created a maintainable data-driven project showcase"
+      ]
+    }
+  },
+  {
+    "title": "Pixel Logic",
+    "category": "Game",
+    "tags": ["Educational Game", "Multiplayer", "Web Application"],
+    "description": "A browser-based multiplayer puzzle game designed to make 10-minute classroom breaks more engaging and relaxing through quick logic-based challenges.",
+    "tech": ["React", "Tailwind CSS", "Vite", "PeerJS", "JavaScript"],
+    "solidColor": "--color-accent",
+    "github": "#",
+    "demo": "https://pixel-logic.vercel.app/",
+    "icon": "bx bx-game",
+    "status": "Featured",
+    "details": {
+      "heroTitle": "Pixel Logic",
+      "heroTagline": "A browser-based multiplayer puzzle game designed to make 10-minute classroom breaks more engaging and relaxing.",
+      "heroVideo": "video/pixel-logic-record.mp4",
+      "overview": "While teaching students, I noticed that many of them spent their short breaks waiting or using their phones. Pixel Logic transforms these 10-minute breaks into fun logic challenges. The game emphasizes quick onboarding, simple gameplay, and friendly competition.",
+      "myRole": {
+        "gameDevelopment": [
+          "Designed gameplay specifically for 10-minute classroom sessions",
+          "Developed puzzle mechanics and game logic using React Hooks",
+          "Built a responsive retro-inspired interface with Tailwind CSS"
+        ],
+        "multiplayerDevelopment": [
+          "Implemented PeerJS for real-time multiplayer rooms",
+          "Developed room creation and fast joining with room codes",
+          "Built live score updates and leaderboard functionality"
+        ],
+        "userExperience": [
+          "Designed quick onboarding for first-time players",
+          "Balanced gameplay difficulty for short, relaxing sessions",
+          "Added subtle visual and audio feedback"
+        ]
+      },
+      "features": [
+        {
+          "title": "Quick Sessions",
+          "description": "Short puzzle sessions optimized specifically for classroom breaks.",
+          "icon": "bx bx-timer"
+        },
+        {
+          "title": "Room-based Multiplayer",
+          "description": "Play together in real-time using PeerJS without needing accounts.",
+          "icon": "bx bx-group"
+        },
+        {
+          "title": "Live Leaderboards",
+          "description": "Real-time score tracking to encourage friendly competition.",
+          "icon": "bx bx-bar-chart-alt-2"
+        },
+        {
+          "title": "Retro Aesthetic",
+          "description": "Pixel-art inspired interface with smooth, modern animations.",
+          "icon": "bx bx-joystick"
+        }
+      ],
+      "technologies": ["React", "Tailwind CSS", "Vite", "PeerJS", "JavaScript", "HTML", "CSS"],
+      "challenges": [
+        {
+          "title": "Designing for Short Breaks",
+          "description": "Balanced the gameplay difficulty so students could enjoy the game without feeling mentally exhausted."
+        },
+        {
+          "title": "Multiplayer Experience",
+          "description": "Implemented room-code-based multiplayer with PeerJS, allowing fast, account-less joining."
+        },
+        {
+          "title": "Simple User Experience",
+          "description": "Focused on intuitive navigation and clear instructions to let students start playing within seconds."
+        }
+      ]
+    }
+  }
+]

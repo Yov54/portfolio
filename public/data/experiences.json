@@ -1,0 +1,47 @@
+[
+  {
+    "role": "Coding Instructor",
+    "company": "The Lab Indonesia",
+    "date": "Jan 2025 — Present",
+    "description": [
+      "Delivered Python and Blockly Programming classes for elementary to high school students through project-based learning.",
+      "Guided students in developing computational thinking, logical reasoning, and problem-solving skills through coding and robotics projects.",
+      "Mentored and trained probationary coding instructors by providing coaching on lesson delivery, classroom management, and curriculum implementation to maintain high teaching standards."
+    ],
+    "icon": "bx bx-code-alt"
+  },
+  {
+    "role": "Machine Learning Mentor",
+    "company": "Bangkit Academy",
+    "date": "Feb 2024 — Jan 2025",
+    "description": [
+      "Mentored machine learning learners through technical discussions, project guidance, and personalized learning support.",
+      "Assisted instructors during Instructor-Led Training (ILT) sessions and facilitated collaborative learning environments.",
+      "Supported students in applying machine learning concepts and best practices to academic and capstone projects."
+    ],
+    "icon": "bx bx-brain"
+  },
+  {
+    "role": "Frontend Engineer Intern",
+    "company": "Harian Kompas",
+    "date": "Jan 2024 — May 2024",
+    "description": [
+      "Worked on multiple production web applications using Laravel, Vue.js, Tailwind CSS, and Bootstrap.",
+      "Career Website (karier.kompas.id): developed new features for users and administrators, including filtering, data export, and recruitment workflow improvements.",
+      "Learning Management System (belajar.kompaskita.com): improved learning interfaces and implemented automated point allocation and video optimization features.",
+      "SDM Administration Website (hr.kompas.id): built document management and reporting modules for internal administrative processes."
+    ],
+    "icon": "bx bx-bot"
+  },
+  {
+    "role": "Frontend Developer",
+    "company": "Freelance",
+    "date": "May 2023 — Dec 2023",
+    "description": [
+      "Developed responsive web applications using Laravel, Tailwind CSS, JavaScript, and MySQL for multiple client projects.",
+      "Implemented new features and improved website usability through responsive interface development.",
+      "Collaborated with the development team to deliver functional and maintainable web solutions."
+    ],
+    "icon": "bx bx-game"
+  }
+]
